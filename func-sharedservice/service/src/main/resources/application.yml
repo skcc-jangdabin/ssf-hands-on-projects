@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: nova-shared-shared-biz
+  profiles:
+    active: local
