@@ -6,8 +6,27 @@ import com.skt.bss.nova.base.shared.kernel.core.base.query.BaseQueryModel;
 
 public record UserQueryModel(
     UUID id,
+    String deptCd,
+    String deptNm,
+    String detlAddr,
+    String detlOneAddr,
+    String detlTwoAddr,
+    String dutyCd,
+    String eltrMlad,
+    String filePath,
+    String gndrCd,
+    String hnpnTelNo,
+    String inptDt,
+    String inptHnfAt,
+    String oposCd,
+    String postNo,
+    String remk500,
+    String tcncGradCd,
+    String userAgex,
+    String userBirt,
+    String userId,
     String userNm,
-    String userId
+    String wthdrwDt
 ) implements BaseQueryModel<UUID>{
     @Override
     public UUID getId() {

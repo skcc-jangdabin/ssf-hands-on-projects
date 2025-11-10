@@ -1,4 +1,4 @@
-package com.skt.bss.nova.shared.shared.biz.func.unit.user;
+package com.skt.bss.nova.shared.shared.biz.func.sharedservice.presentation.adapter.rest.unit.user;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
