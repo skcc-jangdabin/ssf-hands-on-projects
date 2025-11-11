@@ -3,13 +3,13 @@ package com.skt.bss.nova.education.education.handson.func.partyservice.applicati
 import org.springframework.stereotype.Component;
 
 import com.skt.bss.nova.base.shared.framework.core.BaseDomainFactory;
-import com.skt.bss.nova.education.education.biz.func.partyservice.domain.user.UserEntity;
+import com.skt.bss.nova.education.education.biz.func.partyservice.domain.user.User;
 
 @Component
-public class UserDomainFactory extends BaseDomainFactory<UserEntity> {
+public class UserDomainFactory extends BaseDomainFactory<User> {
     
     protected UserDomainFactory() {
-        super(UserEntity.class);
+        super(User.class);
     }
 
 }
