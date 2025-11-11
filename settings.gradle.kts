@@ -1,16 +1,16 @@
-rootProject.name = "nova-shared-shared-biz"
+rootProject.name = "nova-education-edcuation-handson"
 include (
-    "func-sharedservice",
-    "func-sharedservice:application",
-    "func-sharedservice:contract:api",
-    "func-sharedservice:presentation:adapter-rest",
-    "func-sharedservice:service",
-    "func-sharedservice:client:adapter-client-rest",
-    "func-sharedservice:domain",
-    "func-sharedservice:infra:adapter-jpa",
+    "func-partyservice",
+    "func-partyservice:application",
+    "func-partyservice:contract:api",
+    "func-partyservice:presentation:adapter-rest",
+    "func-partyservice:service",
+    "func-partyservice:client:adapter-client-rest",
+    "func-partyservice:domain",
+    "func-partyservice:infra:adapter-jpa",
 )
 
 // Library 모듈
-include("library:nova-shared-shared-biz-starter")
-include("library:nova-shared-shared-biz-func-sharedservice-starter")
-include("library:nova-shared-shared-biz-func-sharedservice-shared")
+include("library:nova-education-education-handson-starter")
+include("library:nova-education-education-handson-func-partyservice-starter")
+include("library:nova-education-education-handson-func-partyservice-shared")
