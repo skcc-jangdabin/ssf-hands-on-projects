@@ -12,12 +12,20 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserEntity implements AggregateRoot<UserEntity, UUID>{
 
+    // 현재는 VO 도출이 안되어있음 -> 실제로는 VO를 도출하여 재활용 (ex: depth) -> 이후 다양한 케이스를 교육
+    // aggregateroot를 식별해주는 수준을 DDD로 보고있음
+    // JpaEntity와의 차이가 되는 부분
     private UUID id;
+    
     private String deptCd;
     private String deptNm;
+
+    // VO ex: Address
     private String detlAddr;
     private String detlOneAddr;
     private String detlTwoAddr;
+    private String oposCd;
+
     private String dutyCd;
     private String eltrMlad;
     private String filePath;
@@ -25,13 +33,14 @@ public class UserEntity implements AggregateRoot<UserEntity, UUID>{
     private String hnpnTelNo;
     private String inptDt;
     private String inptHnfAt;
-    private String oposCd;
     private String postNo;
     private String remk500;
     private String tcncGradCd;
+    // VO ex: UserInfo
     private String userAgex;
     private String userBirt;
     private String userNm;
+    
     private String wthdrwDt;
     private String userId;
 

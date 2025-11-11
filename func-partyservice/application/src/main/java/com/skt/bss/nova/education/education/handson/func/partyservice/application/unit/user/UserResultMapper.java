@@ -11,5 +11,5 @@ import com.skt.bss.nova.education.education.biz.func.partyservice.domain.user.Us
 @Mapper(config = GlobalMapperConfig.class)
 public interface UserResultMapper extends ResultMapper<UserEntity, UserResult>{
 
-
+    
 }

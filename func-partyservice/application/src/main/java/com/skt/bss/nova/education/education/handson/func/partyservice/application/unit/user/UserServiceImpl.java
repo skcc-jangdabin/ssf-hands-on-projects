@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 
 import com.skt.bss.nova.base.shared.framework.core.BaseServiceSupport;
 
+/// 템플릿화 되있는 건 자동으로 생성 됨
+/// 데이터 모델 그대로 도메인 모델 연결
+/// 컨트랙트를 어떻게 정의하냐만 정하면 기본은 다 만들어짐 -> 이를 바탕으로 추가적인 것만 코딩하면 됨
 @Service
 public class UserServiceImpl extends BaseServiceSupport<UserEntity, UUID, UserResult> implements UserService {
     

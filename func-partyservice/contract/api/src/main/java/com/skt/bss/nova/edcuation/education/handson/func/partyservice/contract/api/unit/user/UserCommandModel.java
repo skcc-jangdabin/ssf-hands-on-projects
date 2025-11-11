@@ -4,6 +4,7 @@ import java.util.UUID;
 
 import com.skt.bss.nova.base.shared.kernel.core.base.command.BaseCommandModel;
 
+
 public record UserCommandModel(
     UUID id,
     String deptCd,

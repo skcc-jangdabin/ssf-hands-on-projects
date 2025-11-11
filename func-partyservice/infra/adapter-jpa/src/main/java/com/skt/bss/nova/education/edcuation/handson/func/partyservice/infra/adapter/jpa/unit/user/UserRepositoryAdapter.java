@@ -19,5 +19,5 @@ public class UserRepositoryAdapter extends BaseRepositorySupport<UserEntity, Use
         this.jpaRepository = repository;
         this.entityMapper = mapper;
     }
-        
+    
 }

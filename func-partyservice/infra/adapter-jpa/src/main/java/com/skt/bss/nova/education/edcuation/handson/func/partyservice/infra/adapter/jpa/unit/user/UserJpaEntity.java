@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-@Table(name = "userdetail")
+@Table(name = "userdetail") //table, domain entity 가 이름이 같아야함 (해당 케이스는 h2 DB 예외)
 public class UserJpaEntity extends BaseJpaEntity {
     
     //조직 코드
