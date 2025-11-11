@@ -26,8 +26,10 @@ dependencies {
 
     implementation("com.querydsl:querydsl-jpa:5.1.0:jakarta")
 
-    runtimeOnly("org.postgresql:postgresql:42.7.5")
-    implementation("p6spy:p6spy:3.9.1")
+    runtimeOnly("com.h2database:h2")
+
+    // runtimeOnly("org.postgresql:postgresql:42.7.5")
+    // implementation("p6spy:p6spy:3.9.1")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui")
 
 }
