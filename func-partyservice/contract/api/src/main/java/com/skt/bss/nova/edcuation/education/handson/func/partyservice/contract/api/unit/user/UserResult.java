@@ -26,7 +26,4 @@ public record UserResult(
     String userNm,
     String wthdrwDt
 ) {
-    public UUID id(){
-        return id;
-    }
 }
