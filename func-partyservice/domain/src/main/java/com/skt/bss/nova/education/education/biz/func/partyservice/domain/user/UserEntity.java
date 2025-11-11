@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class User implements AggregateRoot<User, UUID>{
+public class UserEntity implements AggregateRoot<UserEntity, UUID>{
 
     // 현재는 VO 도출이 안되어있음 -> 실제로는 VO를 도출하여 재활용 (ex: depth) -> 이후 다양한 케이스를 교육
     // aggregateroot를 식별해주는 수준을 DDD로 보고있음
@@ -45,7 +45,7 @@ public class User implements AggregateRoot<User, UUID>{
     private String userId;
 
     @Builder
-    public User(
+    public UserEntity(
         UUID id, String deptCd, String deptNm, String detlAddr, String detlOneAddr, String detlTwoAddr,
         String dutyCd, String eltrMlad, String filePath, String gndrCd, String hnpnTelNo,
         String inptDt, String inptHnfAt, String oposCd, String postNo, String remk500,

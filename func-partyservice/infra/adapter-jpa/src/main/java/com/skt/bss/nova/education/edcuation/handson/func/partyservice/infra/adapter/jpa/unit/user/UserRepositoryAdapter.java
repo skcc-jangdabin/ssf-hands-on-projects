@@ -6,10 +6,10 @@ import com.skt.bss.nova.education.education.handson.func.partyservice.applicatio
 import org.springframework.stereotype.Repository;
 
 import com.skt.bss.nova.base.shared.framework.core.BaseRepositorySupport;
-import com.skt.bss.nova.education.education.biz.func.partyservice.domain.user.User;
+import com.skt.bss.nova.education.education.biz.func.partyservice.domain.user.UserEntity;
 
 @Repository
-public class UserRepositoryAdapter extends BaseRepositorySupport<User, UserJpaEntity, UUID> implements UserRepository {
+public class UserRepositoryAdapter extends BaseRepositorySupport<UserEntity, UserJpaEntity, UUID> implements UserRepository {
 
     private final UserJpaEntityRepository jpaRepository;
     private final UserMapper entityMapper;
